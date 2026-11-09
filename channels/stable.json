@@ -1,19 +1,19 @@
 {
     "channel":  "stable",
-    "version":  "1.0.1",
-    "publishedAt":  "2026-11-09T17:18:52Z",
-    "notes":  "## Greenspace OS 1.0.1: a calmer dashboard\n\nThe dashboard is now just the overview of your rooms. Everything you enter or set up moved to two new pages.\n\n**Dashboard**\n- Rooms with readings, lights and fertigation, and your outputs (Turn on/off and Back to automatic stay here).\n- Each room shows its run (\"Run 4 · Flower · day 23 · last pH …\") and links to the Grow page.\n- New boards are announced with \"New boards waiting → Set up\".\n\n**Grow** (new, in the top bar)\n- Start, flip, harvest, drying done and scrap runs; log pH / EC; edit plants; recent activity per room; finished runs.\n- **Flip now also sets the light times and fertigation cycle** (filled in with the current ones). The flip and the new\n  times are saved together.\n- Strains are a tab on this page.\n\n**Settings** (new, in the top bar)\n- Rooms: climate limits, light times, fertigation, automation, nutrient containers. New: rename the facility, add a\n  room, rename a room.\n- Boards: set up new boards, edit or remove boards in use.\n- MQTT broker, Database \u0026 backups, Updates (\"Update now\" lives here now), Account (change the admin password).\n\nNothing changes in how the plant is controlled: automation, commands and the database stay the same. No installer\nneeded: \"Update now\" is enough.\n",
+    "version":  "1.0.2",
+    "publishedAt":  "2026-11-09T18:31:53Z",
+    "notes":  "## Greenspace OS 1.0.2: 24-hour times and Check now\n\n**24-hour times everywhere**\n- Light times (Settings → Rooms, and the Flip pop-up on the Grow page) are typed as 24-hour `HH:MM`, e.g. `06:00` or\n  `18:30`. No more AM/PM, whatever the computer\u0027s clock setting.\n- Every time the pages show (dashboard, history charts, backups, broker, updates) uses a 24-hour clock.\n\n**Settings → Rooms**\n- The Lights card no longer sticks out past the room\u0027s border.\n\n**Settings → Updates**\n- New **Check now** button: asks the release server at once instead of waiting for the next check (every 6 hours).\n\nNothing changes in how the plant is controlled, and there is no database change. No installer needed: \"Update now\" is\nenough.\n",
     "minimumVersion":  "1.0.0",
     "jar":  {
-                "url":  "https://github.com/Sci-Clone444/greenspace-releases/releases/download/v1.0.1/greenspace-os-1.0.1.jar",
-                "size":  167178555,
-                "sha256":  "9ab7011b455ea8b6a28adc7059d2a75fc92c7296ecb9d7fd6c5f1d4e921f0c7b",
-                "signature":  "tMTsyr1vqxQNnZki9cVxKnN3iLRqcvZVzG4ziyq8V7sUGMK9SpsfUx+LxKzOjhP6ksNJ8Jse5FTL+SXWe7WtBA=="
+                "url":  "https://github.com/Sci-Clone444/greenspace-releases/releases/download/v1.0.2/greenspace-os-1.0.2.jar",
+                "size":  167179313,
+                "sha256":  "d18ecc0512b2a9687ddb25628e0ee0af0997fad778c291f074a0b8daa221bd92",
+                "signature":  "BxkaLC1yOH75t5OWBlHoh9Wn/yJNYiVi/oH8oGnnyjMt8c9ah49/jpLm/8jrGp+Qx9wxAEPsSAnb+tI6C5nkBw=="
             },
     "installer":  {
-                      "url":  "https://github.com/Sci-Clone444/greenspace-releases/releases/download/v1.0.1/GreenspaceSetup-1.0.1.exe",
-                      "size":  231840597,
-                      "sha256":  "9f0202328ef0540e36506c1f6ba651fca92873fc4284649ae6465db53caf22fa",
-                      "signature":  "paCBgqlPZPsDSuzYCwNGeLZLW+vgal8xwdT1a1T4wZNhXHK9kys8dEGfvzKeJ3pkltS4akWru6ADDT5ssA5bDg=="
+                      "url":  "https://github.com/Sci-Clone444/greenspace-releases/releases/download/v1.0.2/GreenspaceSetup-1.0.2.exe",
+                      "size":  231854447,
+                      "sha256":  "abb120b11d64c5a102cb8e84ac088a70b0351d8729bd93869fef0779962f07b5",
+                      "signature":  "tyXDfdsxjoSuUPdmJ6CF+5q0iRpCtiJzs8vQQ28ILZ83KWmJG2ymET6Csxly/hoptK9UqZJ5vDGqvXeylTP3AQ=="
                   }
 }
