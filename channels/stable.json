@@ -1,19 +1,19 @@
 {
     "channel":  "stable",
-    "version":  "1.0.0",
-    "publishedAt":  "2026-11-09T05:51:07Z",
-    "notes":  "First release of Greenspace OS.\n\n- One installer for Windows 10/11 (64-bit): brings its own Java, database and MQTT broker; no other software needed.\n- Dashboard: rooms, boards, live readings, climate / lights / fertigation automation, manual control of every output.\n- History charts per room and per grow run; grow runs with pH/EC log and harvest results; strain catalogue.\n- Hourly database backups with restore, optional copies to a second disk or share, phone alerts via a webhook.\n- Broker panel: one account per board, import of an existing Mosquitto password file and CA.\n- \"Update now\" on the dashboard installs signed updates (with automatic rollback if the new version doesn\u0027t start).\n\nNew install: run `GreenspaceSetup-1.0.0.exe` as administrator. The PC\u0027s network must be set to **Private** in Windows,\notherwise the firewall keeps the boards out.\n",
+    "version":  "1.0.1",
+    "publishedAt":  "2026-11-09T17:18:52Z",
+    "notes":  "## Greenspace OS 1.0.1: a calmer dashboard\n\nThe dashboard is now just the overview of your rooms. Everything you enter or set up moved to two new pages.\n\n**Dashboard**\n- Rooms with readings, lights and fertigation, and your outputs (Turn on/off and Back to automatic stay here).\n- Each room shows its run (\"Run 4 · Flower · day 23 · last pH …\") and links to the Grow page.\n- New boards are announced with \"New boards waiting → Set up\".\n\n**Grow** (new, in the top bar)\n- Start, flip, harvest, drying done and scrap runs; log pH / EC; edit plants; recent activity per room; finished runs.\n- **Flip now also sets the light times and fertigation cycle** (filled in with the current ones). The flip and the new\n  times are saved together.\n- Strains are a tab on this page.\n\n**Settings** (new, in the top bar)\n- Rooms: climate limits, light times, fertigation, automation, nutrient containers. New: rename the facility, add a\n  room, rename a room.\n- Boards: set up new boards, edit or remove boards in use.\n- MQTT broker, Database \u0026 backups, Updates (\"Update now\" lives here now), Account (change the admin password).\n\nNothing changes in how the plant is controlled: automation, commands and the database stay the same. No installer\nneeded: \"Update now\" is enough.\n",
     "minimumVersion":  "1.0.0",
     "jar":  {
-                "url":  "https://github.com/Sci-Clone444/greenspace-releases/releases/download/v1.0.0/greenspace-os-1.0.0.jar",
-                "size":  167132039,
-                "sha256":  "9347253fd8411bf5e61c906a5fedb87cf5f09dfb944828d8c89854cba52295f0",
-                "signature":  "VZdnAQgmHiCwxAc/B4nGH/GX6TfezLdRK2r0WssAVYWijX3o1QtfDsMA8URL3BHCuFvhlnBeVIZ/P002TtMBDw=="
+                "url":  "https://github.com/Sci-Clone444/greenspace-releases/releases/download/v1.0.1/greenspace-os-1.0.1.jar",
+                "size":  167178555,
+                "sha256":  "9ab7011b455ea8b6a28adc7059d2a75fc92c7296ecb9d7fd6c5f1d4e921f0c7b",
+                "signature":  "tMTsyr1vqxQNnZki9cVxKnN3iLRqcvZVzG4ziyq8V7sUGMK9SpsfUx+LxKzOjhP6ksNJ8Jse5FTL+SXWe7WtBA=="
             },
     "installer":  {
-                      "url":  "https://github.com/Sci-Clone444/greenspace-releases/releases/download/v1.0.0/GreenspaceSetup-1.0.0.exe",
-                      "size":  231800441,
-                      "sha256":  "947a477534322511009e019b359f378a7613c10924f583afd8d27e357cead579",
-                      "signature":  "OshJ+iT6OlcjvrVFzehfJlSoRSCyi3ZEHK4v7zwKTFtpVI63cIyASPa9OSDl24CfnWftUUEX7C7qVBJNOMFHAQ=="
+                      "url":  "https://github.com/Sci-Clone444/greenspace-releases/releases/download/v1.0.1/GreenspaceSetup-1.0.1.exe",
+                      "size":  231840597,
+                      "sha256":  "9f0202328ef0540e36506c1f6ba651fca92873fc4284649ae6465db53caf22fa",
+                      "signature":  "paCBgqlPZPsDSuzYCwNGeLZLW+vgal8xwdT1a1T4wZNhXHK9kys8dEGfvzKeJ3pkltS4akWru6ADDT5ssA5bDg=="
                   }
 }
