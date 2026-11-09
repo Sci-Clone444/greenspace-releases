@@ -1,0 +1,19 @@
+{
+    "channel":  "stable",
+    "version":  "1.0.0",
+    "publishedAt":  "2026-11-09T05:51:07Z",
+    "notes":  "First release of Greenspace OS.\n\n- One installer for Windows 10/11 (64-bit): brings its own Java, database and MQTT broker; no other software needed.\n- Dashboard: rooms, boards, live readings, climate / lights / fertigation automation, manual control of every output.\n- History charts per room and per grow run; grow runs with pH/EC log and harvest results; strain catalogue.\n- Hourly database backups with restore, optional copies to a second disk or share, phone alerts via a webhook.\n- Broker panel: one account per board, import of an existing Mosquitto password file and CA.\n- \"Update now\" on the dashboard installs signed updates (with automatic rollback if the new version doesn\u0027t start).\n\nNew install: run `GreenspaceSetup-1.0.0.exe` as administrator. The PC\u0027s network must be set to **Private** in Windows,\notherwise the firewall keeps the boards out.\n",
+    "minimumVersion":  "1.0.0",
+    "jar":  {
+                "url":  "https://github.com/Sci-Clone444/greenspace-releases/releases/download/v1.0.0/greenspace-os-1.0.0.jar",
+                "size":  167132039,
+                "sha256":  "9347253fd8411bf5e61c906a5fedb87cf5f09dfb944828d8c89854cba52295f0",
+                "signature":  "VZdnAQgmHiCwxAc/B4nGH/GX6TfezLdRK2r0WssAVYWijX3o1QtfDsMA8URL3BHCuFvhlnBeVIZ/P002TtMBDw=="
+            },
+    "installer":  {
+                      "url":  "https://github.com/Sci-Clone444/greenspace-releases/releases/download/v1.0.0/GreenspaceSetup-1.0.0.exe",
+                      "size":  231800441,
+                      "sha256":  "947a477534322511009e019b359f378a7613c10924f583afd8d27e357cead579",
+                      "signature":  "OshJ+iT6OlcjvrVFzehfJlSoRSCyi3ZEHK4v7zwKTFtpVI63cIyASPa9OSDl24CfnWftUUEX7C7qVBJNOMFHAQ=="
+                  }
+}
